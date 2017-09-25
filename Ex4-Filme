@@ -1,0 +1,68 @@
+public class Filme {
+	
+	private int codigo;
+	private String titulo;
+	private String genero;
+	private int ano_producao;
+	private String duracao;
+	private String direcao;
+	
+	// CONSTRUTOR PADRÃO:
+	public Filme(){
+				
+			}
+	
+	// toString:
+	public String toString() {
+		return "Codigo: " + codigo +
+				"\nTítulo: " + titulo +
+				"\nGênero: " + genero +
+				"\nAno de produção: " + ano_producao +
+				"\nDuração: " + duracao + " min." +
+				"\nDireção: " + direcao;
+	}
+	
+	// GETTERS E SETTERS
+	// CODIGO:
+	public int getCodigo() {
+		return codigo;
+	}
+	public void setCodigo(int codigo) {
+		this.codigo=codigo;
+	}
+	// TITULO:
+	public String getTitulo() {
+		return titulo;
+	}
+	public void setTitulo(String titulo) {
+		this.titulo=titulo;
+	}
+	// GENERO:
+	public String getGenero() {
+		return genero;
+	}
+	public void setGenero(String genero) {
+		this.genero=genero;
+	}
+	// ANO DE PRODUCAO:
+	public int getAno_Producao() {
+		return ano_producao;
+	}
+	public void setAno_Producao(int ano_producao) {
+		this.ano_producao=ano_producao;
+	}
+	// DURACAO:
+	public String getDuracao() {
+		return duracao;
+	}
+	public void setDuracao(String duracao) {
+		this.duracao=duracao;
+	}
+	// DIRECAO:
+	public String getDirecao() {
+		return direcao;
+	}
+	public void setDirecao(String direcao) {
+		this.direcao=direcao;
+	}
+}
