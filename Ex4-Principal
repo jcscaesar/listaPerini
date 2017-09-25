@@ -1,0 +1,28 @@
+import javax.swing.JOptionPane;
+
+public class PrincipalFilme {
+
+	public static void main(String[] args) {
+	// Instanciar Filmes:
+		Filme filme1 = new Filme();
+		Filme filme2 = new Filme();
+	// Incluindo Dados: Filme1
+		filme1.setCodigo(Integer.parseInt(JOptionPane.showInputDialog("Digite o codigo do filme 1")));
+		filme1.setTitulo(JOptionPane.showInputDialog("Digite o titulo"));
+		filme1.setGenero(JOptionPane.showInputDialog("Digite o genero"));
+		filme1.setAno_Producao(Integer.parseInt(JOptionPane.showInputDialog("Digite o ano de producao")));
+		filme1.setDuracao(JOptionPane.showInputDialog("Digite a duracao (minutos)"));
+		filme1.setDirecao(JOptionPane.showInputDialog("Digite a direcao"));
+	
+	// Incluindo Dados: Filme1
+		filme2.setCodigo(Integer.parseInt(JOptionPane.showInputDialog("Digite o codigo do filme 2")));
+		filme2.setTitulo(JOptionPane.showInputDialog("Digite o titulo"));
+		filme2.setGenero(JOptionPane.showInputDialog("Digite o genero"));
+		filme2.setAno_Producao(Integer.parseInt(JOptionPane.showInputDialog("Digite o ano de producao")));
+		filme2.setDuracao(JOptionPane.showInputDialog("Digite a duracao (em minutos)"));
+		filme2.setDirecao(JOptionPane.showInputDialog("Digite a direcao"));
+	
+		JOptionPane.showMessageDialog(null, "Filme 1:\n" + filme1.toString() +
+											"\n\nFilme 2:\n" + filme2.toString());
+	}
+}
